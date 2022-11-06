@@ -4,7 +4,7 @@ const axiosBuilder = ({req}) => {
     if(typeof window === "undefined"){
         //server side
         return axios.create({
-            baseURL: "http://ingress-nginx-controller.ingress-nginx.svc.cluster.local",
+            baseURL: "http://drendragon.com",
             headers: req.headers
         })
     }else{
