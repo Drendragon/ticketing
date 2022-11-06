@@ -7,7 +7,7 @@ import {OrderCreatedListener} from "./events/listeners/order-created-listener";
 
 const bootstrap = async () => {
 
-    console.log('Startup...');
+    console.log('Startup....');
 
     if (!process.env.JWT_KEY) {
         throw new Error("JWT_KEY is missing");

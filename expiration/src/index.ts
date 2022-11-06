@@ -3,6 +3,8 @@ import {OrderCreatedListener} from "./events/listeners/order-created-listener";
 
 const bootstrap = async () => {
 
+    console.log('starting');
+    
     if (!process.env.NATS_CLIENT_ID) {
         throw new Error("NATS_CLIENT_ID is missing");
     }
