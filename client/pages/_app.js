@@ -13,7 +13,6 @@ const AppComponent = ({Component, pageProps, currentUser}) => {
     </div>
 }
 
-// SSR side ... sometimes
 AppComponent.getInitialProps = async (appContext) => {
 
     const client = buildClient(appContext.ctx)
