@@ -17,3 +17,4 @@ jobs:
         token: ${{ secrets.DO_TOKEN }}
     - run: doctl kubernetes cluster kubeconfig save drendragon-ticketing
     - run: kubectl apply -f infra/k8s
+    - run: kubectl apply -f infra/k8s/k8s-prod
