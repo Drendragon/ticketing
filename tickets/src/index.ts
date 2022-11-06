@@ -7,6 +7,8 @@ import {OrderCancelledListener} from "./events/listeners/order-cancelled-listene
 
 const bootstrap = async () => {
 
+    console.log("Startup");
+    
     if (!process.env.JWT_KEY) {
         throw new Error("JWT_KEY is missing");
     }
